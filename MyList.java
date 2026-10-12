@@ -34,7 +34,6 @@ public interface MyList<E> extends java.util.Collection<E> {
     //PRE: accepts the element to remove
     //POST:adds element to the end of the array  
     public default boolean add(E e){
-        System.out.println("adding: " + e);
         add(size(), e);
         return true;
     }
@@ -101,5 +100,4 @@ public interface MyList<E> extends java.util.Collection<E> {
     }
 
 }
-
 
